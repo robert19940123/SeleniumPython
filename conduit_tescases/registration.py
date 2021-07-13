@@ -25,8 +25,8 @@ try:
         t.send_keys(c)
 
 
-    type_and_check(username, "Username", "robert0713")
-    type_and_check(mail, "Email", "rob@freemail.hu")
+    type_and_check(username, "Username", "robert07134")
+    type_and_check(mail, "Email", "robert455@freemail.hu")
     type_and_check(password, "Password", "Aaaa11111")
 
     assert sign_up.text == driver.find_element_by_xpath("//h1[@class='text-xs-center']").text == green_button.text
@@ -35,6 +35,8 @@ try:
 
     assert driver.find_element_by_xpath("//div[@class='swal-text']").text == "Your registration was successful!"
     driver.find_element_by_xpath("//button[@class='swal-button swal-button--confirm']").click()
+
+    assert driver.find_element_by_xpath("//a[@href='#/@robert07134/']").text == "robert07134"
 
 finally:
     time.sleep(1.0)
