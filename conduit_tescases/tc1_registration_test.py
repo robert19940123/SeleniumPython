@@ -42,3 +42,6 @@ def registration_test():
     finally:
         time.sleep(1.0)
         driver.close()
+
+
+registration_test()

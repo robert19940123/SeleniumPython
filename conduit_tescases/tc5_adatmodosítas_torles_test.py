@@ -1,10 +1,10 @@
 from selenium import webdriver
 import time
 
-driver = webdriver.Chrome()
-
 
 def adatmodositas_torles_test():
+    driver = webdriver.Chrome()
+
     driver.get("http://localhost:1667/#/")
 
     try:
@@ -67,3 +67,6 @@ def adatmodositas_torles_test():
 
     finally:
         driver.close()
+
+
+adatmodositas_torles_test()

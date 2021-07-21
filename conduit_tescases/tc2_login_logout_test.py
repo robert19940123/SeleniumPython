@@ -45,3 +45,6 @@ def login_logout_test():
 
     finally:
         driver.close()
+
+
+login_logout_test()

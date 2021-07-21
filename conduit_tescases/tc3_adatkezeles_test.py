@@ -1,10 +1,10 @@
+from selenium import webdriver
+import time
+
+driver = webdriver.Chrome()
+
+
 def adatkezeles_test():
-    from selenium import webdriver
-    import time
-    import allure
-
-    driver = webdriver.Chrome()
-
     driver.get("http://localhost:1667/#/")
 
     try:
@@ -45,3 +45,6 @@ def adatkezeles_test():
 
     finally:
         driver.close()
+
+
+adatkezeles_test()
